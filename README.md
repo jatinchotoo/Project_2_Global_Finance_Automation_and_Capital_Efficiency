@@ -5,6 +5,20 @@ This platform is an enterprise-grade financial engineering solution designed to 
 
 ---
 
+## 📂 Repository Structure
+```text
+Project_2_Global_Alpha_Clean/
+├─ data/
+│  ├─ Master_Consolidated_Fact.csv
+│  ├─ Final_ROIC_Report.csv
+│  └─ Executive_Performance_Summary.xlsx
+├─ images/
+│  ├─ roic.png
+│  └─ roic_results.png
+├─ pipeline.py
+├─ analytics.py
+└─ README.md
+
 ## ⚙️ Solution Architecture
 The system follows a modular ETL (Extract, Transform, Load) design:
 
