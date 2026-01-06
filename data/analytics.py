@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import os
 
-# Point to the data folder for the master file
+# Point to the data folder
 base_path = os.path.join(os.getcwd(), 'data')
 master_file = os.path.join(base_path, "Master_Consolidated_Fact.csv")
 
@@ -25,6 +25,13 @@ try:
     report = pivot[['Revenue', 'NOPAT', 'Assets', 'ROIC_%']].sort_values(by='ROIC_%', ascending=False)
     print(report.round(2))
     print("="*65)
+    
+    # --- EXPORT SECTION ---
+    # Save to CSV and Excel
+    report.to_csv(os.path.join(base_path, 'Final_ROIC_Report.csv'))
+    report.to_excel(os.path.join(base_path, 'Executive_Performance_Summary.xlsx'))
+    
+    print("✅ Reports exported to /data/ folder.")
     print("✅ ANALYSIS COMPLETE")
 
 except FileNotFoundError:
