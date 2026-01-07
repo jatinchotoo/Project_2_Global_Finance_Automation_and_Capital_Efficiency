@@ -1,7 +1,7 @@
 # 💎 Global Finance & ROIC: Capital Efficiency Engine
 
 <p align="center">
-  <img src="Project_2_ROIC/roic.png" width="80%" alt="ROIC Benchmarking">
+  <img src="images/roic.png" width="80%" alt="ROIC Benchmarking">
 </p>
 
 ## 🎯 Executive Overview
@@ -12,7 +12,7 @@ This platform is an enterprise-grade financial engineering solution designed to 
 ## 📂 Repository Structure
 ```text
 Project_2_Global_Finance_Automation/
-├─ Project_2_ROIC/
+├─ images/
 │  ├─ roic.png
 │  └─ roic_results.png
 ├─ data/
@@ -21,40 +21,35 @@ Project_2_Global_Finance_Automation/
 ├─ pipeline.py
 ├─ analytics.py
 └─ README.md
-
-```
-
-## ⚙️ Solution Architecture
-
+⚙️ Solution Architecture
 The system follows a modular ETL (Extract, Transform, Load) design:
 
-* **pipeline.py (The ETL Engine):** Executes Fuzzy Matching and Column Normalization to align disparate regional charts of accounts. Applies deterministic FX translation logic.
-* **analytics.py (Executive Intelligence):** Calculates NOPAT and Invested Capital. Generates automated performance visuals and audit trails.
+pipeline.py (The ETL Engine): Executes Fuzzy Matching and Column Normalization to align disparate regional charts of accounts. Applies deterministic FX translation logic.
 
-## 📊 Performance Intelligence
+analytics.py (Executive Intelligence): Calculates NOPAT and Invested Capital. Generates automated performance visuals and audit trails.
 
-### Executive Summary (Raw Terminal Output)
+📊 Performance Intelligence
+Executive Summary (Raw Terminal Output)
+<p align="center"> <img src="images/roic_results.png" width="80%" alt="Terminal Results"> </p>
 
-<p align="center">
-<img src="Project_2_ROIC/roic_results.png" width="80%" alt="Terminal Results">
-</p>
+Top Performer: CryptoFlow achieves an elite 167.86% ROIC, demonstrating extreme capital efficiency.
 
-* **Top Performer:** **CryptoFlow** achieves an elite **167.86% ROIC**, demonstrating extreme capital efficiency.
-* **Strategic Risk:** **Terra-Grid** flags **$2.1M in idle assets** (Assets: 2,100,000.0) with **0.00% ROIC**, triggering an immediate capital reallocation review.
-* **Data Governance:** The system identifies entities with missing Balance Sheet data (marked as **NaN**), such as FinShield Re and Omni-Retail, to streamline internal audits.
+Strategic Risk: Terra-Grid flags $2.1M in idle assets (Assets: 2,100,000.0) with 0.00% ROIC, triggering an immediate capital reallocation review.
 
-## 🛠 Technical Challenge: The "Data Integrity" Recovery
+Data Governance: The system identifies entities with missing Balance Sheet data (marked as NaN), such as FinShield Re and Omni-Retail, to streamline internal audits.
 
-* **The Problem:** Initial data ingestion resulted in a "False Zero" ROIC due to malformed hybrid files and inconsistent column naming (e.g., `Revenue` vs `REVENUE`).
-* **The Fix:** Implemented a **Preprocessing String-Splitting Layer** to "unpack" the hybrid CSV data and developed a **Case-Insensitive Column Normalizer**.
+🛠 Technical Challenge: The "Data Integrity" Recovery
+The Problem: Initial data ingestion resulted in a "False Zero" ROIC due to malformed hybrid files and inconsistent column naming (e.g., Revenue vs REVENUE).
 
-## 🚀 How to Run
+The Fix: Implemented a Preprocessing String-Splitting Layer to "unpack" the hybrid CSV data and developed a Case-Insensitive Column Normalizer.
 
-1. **Prepare Data:** Ensure raw ledgers are located in the `/data` folder.
-2. **Execute Pipeline:** `python pipeline.py`
-3. **Generate Analytics:** `python analytics.py`
+🚀 How to Run
+Prepare Data: Ensure raw ledgers are located in the /data folder.
 
----
+Execute Pipeline: python pipeline.py
 
-**Author:** Jatin Chotoo
+Generate Analytics: python analytics.py
 
+Author: Jatin Chotoo
+
+Focus: Python Automation, Capital Efficiency, and Strategic Finance
