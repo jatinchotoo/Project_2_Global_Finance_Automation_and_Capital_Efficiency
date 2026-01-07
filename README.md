@@ -30,7 +30,9 @@ analytics.py (Executive Intelligence): Calculates NOPAT and Invested Capital. Ge
 
 📊 Performance Intelligence
 Executive Summary (Raw Terminal Output)
-<p align="center"> <img src="images/roic_results.png" width="80%" alt="Terminal Results"> </p>
+<p align="center">
+  <img src="./images/roic_results.png" width="80%" alt="Terminal Results">
+</p>
 
 Top Performer: CryptoFlow achieves an elite 167.86% ROIC, demonstrating extreme capital efficiency.
 
